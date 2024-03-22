@@ -1,7 +1,7 @@
 {
   "name": "jegv-custom-components",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -26,8 +26,8 @@
     ]
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "scripts": {
     "dev": "npm run storybook",
@@ -37,8 +37,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_f5dec5a19909d91",
-    "clean" : "rimraf dist/",
-    "copyfiles" : "copyfiles -u 1 src/**/*.css dist/"
+    "clean": "rimraf dist/",
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.23",
@@ -66,5 +66,7 @@
     "storybook": "^8.0.1",
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
+  },
+  "dependencies": {
   }
 }
